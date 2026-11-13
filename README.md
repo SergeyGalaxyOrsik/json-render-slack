@@ -2,9 +2,16 @@
 
 An agent skill for Claude Code and other agents that read `SKILL.md`. It turns a [json-render](https://json-render.dev) spec into a **native Slack message**, with real charts, tables, fields and link buttons, and posts it through a plain **Incoming Webhook**. You don't need a Slack bot, a bot token or a Chat SDK instance.
 
-```
-Spec (JSON) ──toCard()──▶ CardElement ──cardToSlackBlocks()──▶ Block Kit ──POST──▶ webhook
- @json-render/chat                       @chat-adapter/slack/blocks             { text, blocks }
+```mermaid
+flowchart LR
+    spec["Spec<br/>(JSON)"]
+    card["CardElement"]
+    blocks["Block Kit<br/>blocks"]
+    slack["Slack channel<br/>(Incoming Webhook)"]
+
+    spec -- "toCard()<br/>@json-render/chat" --> card
+    card -- "cardToSlackBlocks()<br/>@chat-adapter/slack/blocks" --> blocks
+    blocks -- "POST { text, blocks }" --> slack
 ```
 
 ## Why
