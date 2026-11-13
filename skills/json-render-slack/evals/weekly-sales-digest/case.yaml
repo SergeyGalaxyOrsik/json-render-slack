@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: weekly-sales-digest
+expected_outcome: |
+  A sales-digest.ts module that builds a json-render spec (root Card, Fields for totals,
+  a line chart this week vs last week, a table of top products) and posts { text, blocks }
+  to an incoming webhook using toCard + cardToSlackBlocks, without a Slack bot or Chat SDK
+  instance. An example spec and its converted Block Kit output, with native
+  data_visualization and data_table blocks, not code-block fallbacks.

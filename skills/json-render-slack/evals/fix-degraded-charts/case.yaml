@@ -1,0 +1,9 @@
+schema_version: "1.1"
+name: fix-degraded-charts
+context:
+  scaffold_script: place-files.sh
+expected_outcome: |
+  Identifies that Slack allows only 2 data_visualization blocks per message (the 3rd chart
+  degrades), that chart labels over 20 characters (and duplicates after clipping) degrade a
+  chart, and that Field values are mrkdwn and must escape <, > and &. fixed-spec.json converts
+  with no code-block fallbacks.

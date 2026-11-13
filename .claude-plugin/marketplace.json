@@ -1,0 +1,17 @@
+{
+  "name": "json-render-slack",
+  "owner": {
+    "name": "SergeyGalaxyOrsik",
+    "url": "https://github.com/SergeyGalaxyOrsik"
+  },
+  "metadata": {
+    "description": "json-render → Slack Block Kit over an incoming webhook, as an agent skill."
+  },
+  "plugins": [
+    {
+      "name": "json-render-slack",
+      "source": "./",
+      "description": "Render json-render specs as native Slack Block Kit messages and post them through an incoming webhook, no Slack bot required."
+    }
+  ]
+}

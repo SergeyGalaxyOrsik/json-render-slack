@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: deploy-alert-buttons
+expected_outcome: |
+  deploy-alert.ts builds a json-render spec with a Card root, Fields, a log excerpt and an
+  Actions row, converts it with toCard + cardToSlackBlocks and posts { text, blocks } to the
+  webhook. "View logs" is a LinkButton. The answer explains that a Rollback button cannot work
+  through a plain incoming webhook (interactive buttons need a Slack app with interactivity)
+  and offers an alternative such as a LinkButton to a rollback page.

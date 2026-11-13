@@ -1,0 +1,10 @@
+{
+  "name": "json-render-slack",
+  "version": "0.1.0",
+  "description": "Render json-render specs as native Slack Block Kit messages (charts, tables, fields, link buttons) and post them through an incoming webhook, no Slack bot required.",
+  "author": { "name": "SergeyGalaxyOrsik", "url": "https://github.com/SergeyGalaxyOrsik" },
+  "homepage": "https://github.com/SergeyGalaxyOrsik/json-render-slack",
+  "repository": "https://github.com/SergeyGalaxyOrsik/json-render-slack",
+  "license": "MIT",
+  "keywords": ["slack", "block-kit", "json-render", "generative-ui", "webhook", "skill"]
+}
